@@ -90,7 +90,7 @@ export default function BlogPost({post}) {
                 </section>
             </article>
 
-            <div className="flex place-content-between items-baseline py-8 opacity-80">
+            <div className="flex place-content-center items-baseline py-8 opacity-80">
                 <div>
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-facebook w-12 aspect-square text-xl flex justify-center items-center'></i></button>
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-twitter w-12 aspect-square text-xl flex justify-center items-center'></i></button>
