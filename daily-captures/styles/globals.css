@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #18181b;
+  --ff-primary: 'Lato', sans-serif;
+  --ff-secondary: 'Prata', serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  font: inherit;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+
+h1 {
+  @apply text-5xl
+}
+
+h2 {
+  @apply text-3xl
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-secondary);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  color: #fafafa;
+}
+
+p {
+  font-family: var(--ff-primary);
+  color: #e4e4e7;
+  margin-top: 0;
+}
+
+section {
+  gap: 2rem;
+}
+
+img {
+  width: 80%;
+}
+
+section {
+  column-rule-style: solid;
+  column-rule-color: rgb(55, 55, 55);
+}
+
+
+@media (min-width: 768px) {
+
+  body {
+    text-align: left;
+  }
+
+  section > * {
+    margin-top: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: #18181b;
+  }
+}
