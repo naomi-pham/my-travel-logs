@@ -11,7 +11,12 @@ export default function BlogCard({post}) {
 
             <section className='columns-1 sm:columns-2 lg:columns-3 mb-6'>
                 <div className='mt-2 mb-5 w-11/12 lg:mx-auto'>
-                    <Image src={coverPhoto.url} width={250} height={180}/>       
+                    <Image 
+                        src={coverPhoto.url} 
+                        width={250} 
+                        height={180}
+                        alt=""
+                    />       
                 </div>
                 <div
                     dangerouslySetInnerHTML={{__html: post.content.html}}>

@@ -1,6 +1,5 @@
 import {GraphQLClient, gql} from "graphql-request"
-import Nav from "../../components/Nav"
-import Head from "next/head"
+import Image from "next/image"
 import React from "react"
 
 const graphcms = new GraphQLClient("https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9hecjwa0gsn01uj7mgtceh8/master")
@@ -76,7 +75,14 @@ export default function BlogPost({post}) {
             <h1 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h1>
             <article className='bg-zinc-800 px-8 py-2'>
                 <section className='columns-1 sm:columns-2 lg:columns-3 py-8'>
-                    <img className='w-11/12 mt-2 mb-5 block' src={coverPhoto.url} width="200px"/>       
+                    <div className='mt-2 mb-5 w-11/12 lg:mx-auto'>
+                        <Image 
+                            src={coverPhoto.url} 
+                            width={250} 
+                            height={180}
+                            alt=""
+                        />       
+                    </div>
                     <div
                         dangerouslySetInnerHTML={{__html: post.content.html}}>
                     </div>
