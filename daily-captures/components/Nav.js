@@ -8,7 +8,7 @@ export default function Nav() {
                 <p className='hover:bg-zinc-800 text-emerald-500 text-lg rounded-lg py-2 px-3 font-bold'>
                     <Link href={"/"}>Home</Link>
                 </p>
-                <p className='hover:bg-zinc-800 text-lg rounded-lg py-2 px-3'>
+                <p className='hover:bg-zinc-800 text-lg rounded-lg py-2 px-3 opacity-70'>
                     <Link href={"/gallery"}>Gallery</Link>
                 </p>       
             </div>
