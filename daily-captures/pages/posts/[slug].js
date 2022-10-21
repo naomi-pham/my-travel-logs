@@ -95,11 +95,16 @@ export default function BlogPost({post}) {
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-facebook w-12 aspect-square text-xl flex justify-center items-center'></i></button>
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-twitter w-12 aspect-square text-xl flex justify-center items-center'></i></button>
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center'></i></button>
+                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800">
+                        <i 
+                            className={`text-xl bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} 
+                                        hover:scale-125 transition-transform ease-in-out duration-300 opacity-80
+                                        bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center`}
+                            onClick={toggleLike}
+                         >
+                        </i>
+                    </button>
                 </div>
-                <div className="flex text-xl gap-2">
-                    <i onClick={toggleLike} className={`text-xl bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} hover:scale-125 transition-transform ease-in-out duration-300 opacity-80`}></i>
-                    <p>{count}</p>
-                </div>    
             </div>   
         </div>
     )
