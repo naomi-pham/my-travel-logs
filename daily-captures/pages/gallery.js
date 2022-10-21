@@ -46,7 +46,7 @@ export default function Gallery({posts}) {
           <h1 className='text-4xl sm:text-5xl lg:text-6xl mt-4 lg:mt-0'>Gallery</h1>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
             {posts.map(post => (
-              <div key={post.id} className='bg-zinc-700 overflow-hidden'>
+              <div key={post.id} className='bg-zinc-700 overflow-hidden sm:mx-0 mx-auto'>
                   <Link href={"/posts/" + post.slug}>
                     <Image 
                       className='hover:scale-125 hover:cursor-pointer object-fit transition-transform ease-in-out duration-300' 
