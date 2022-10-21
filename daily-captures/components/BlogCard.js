@@ -22,7 +22,7 @@ export default function BlogCard({post}) {
                     dangerouslySetInnerHTML={{__html: post.content.html}}>
                 </div>
                 <Link href={"/posts/" + slug}>
-                    <button className='bg-zinc-700 hover:bg-zinc-600 p-2 text-sm font-bold opacity-60 rounded-lg mt-3'>
+                    <button className='hover:bg-zinc-600 text-emerald-500 p-2 text-sm font-bold opacity-60 rounded-lg mt-3'>
                         Go to post
                     </button>
                 </Link>
