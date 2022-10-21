@@ -72,38 +72,28 @@ export default function BlogPost({post}) {
     }
 
     return (
-
-        <div className='m-8 lg:mx-44'>
-
-            <Head>
-                <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />           
-            </Head>
-
-            <Nav />
-            <main className='text-left pt-8 lg:pt-12 lg:pb-8'>             
-                <h1 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h1>
-                <article className='bg-zinc-800 px-8 py-2'>
-                    <section className='columns-1 sm:columns-2 lg:columns-3 py-8'>
-                        <img className='w-11/12 mt-2 mb-5 block' src={coverPhoto.url} width="200px"/>       
-                        <div
-                            dangerouslySetInnerHTML={{__html: post.content.html}}>
-                        </div>
-                    </section>
-                </article>
-                <div className="flex place-content-between items-baseline py-8 opacity-80">
-                    <div>
-                        <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i class='bx bxl-facebook w-12 aspect-square text-xl flex justify-center items-center'></i></button>
-                        <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i class='bx bxl-twitter w-12 aspect-square text-xl flex justify-center items-center'></i></button>
-                        <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i class='bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center'></i></button>
+        <div className='text-left pt-8 lg:pt-12 lg:pb-8'>             
+            <h1 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h1>
+            <article className='bg-zinc-800 px-8 py-2'>
+                <section className='columns-1 sm:columns-2 lg:columns-3 py-8'>
+                    <img className='w-11/12 mt-2 mb-5 block' src={coverPhoto.url} width="200px"/>       
+                    <div
+                        dangerouslySetInnerHTML={{__html: post.content.html}}>
                     </div>
-                    <div className="flex text-xl gap-2">
-                        <i onClick={toggleLike} className={`text-xl bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} hover:scale-125 transition-transform ease-in-out duration-300 opacity-80`}></i>
-                        <p>{count}</p>
-                    </div>
-                    
+                </section>
+            </article>
+
+            <div className="flex place-content-between items-baseline py-8 opacity-80">
+                <div>
+                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-facebook w-12 aspect-square text-xl flex justify-center items-center'></i></button>
+                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-twitter w-12 aspect-square text-xl flex justify-center items-center'></i></button>
+                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center'></i></button>
                 </div>
-                
-            </main>
+                <div className="flex text-xl gap-2">
+                    <i onClick={toggleLike} className={`text-xl bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} hover:scale-125 transition-transform ease-in-out duration-300 opacity-80`}></i>
+                    <p>{count}</p>
+                </div>    
+            </div>   
         </div>
     )
 }

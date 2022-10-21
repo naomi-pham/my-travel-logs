@@ -9,7 +9,7 @@ export default function BlogCard({post}) {
             <h2 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h2>
 
             <section className='columns-1 sm:columns-2 lg:columns-3 mb-6'>
-                <img className='w-11/12 mt-2 mb-5 block' src={coverPhoto.url} width="200px"/>       
+                <img className='w-11/12 mt-2 mb-5' src={coverPhoto.url} width="200px"/>       
                 <div
                     dangerouslySetInnerHTML={{__html: post.content.html}}>
                 </div>
