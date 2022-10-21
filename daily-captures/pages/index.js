@@ -42,7 +42,7 @@ export default function Home({posts}) {
   return (
       <main className='text-left pt-8 lg:pt-12 lg:pb-8'>     
         <div>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl mt-4 lg:mt-0'>My daily captures</h1>
+          <h1 className='text-4xl sm:text-5xl lg:text-6xl mt-4 lg:mt-0'>My travel logs</h1>
             {posts.map(post => (
               <BlogCard 
                 key={post.id} 
