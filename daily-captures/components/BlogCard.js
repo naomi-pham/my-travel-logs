@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from'next/image';
 
 export default function BlogCard({post}) {
 
@@ -9,7 +10,9 @@ export default function BlogCard({post}) {
             <h2 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h2>
 
             <section className='columns-1 sm:columns-2 lg:columns-3 mb-6'>
-                <img className='w-11/12 mt-2 mb-5' src={coverPhoto.url} width="200px"/>       
+                <div className='mt-2 mb-5 w-11/12 lg:mx-auto'>
+                    <Image src={coverPhoto.url} width={250} height={180}/>       
+                </div>
                 <div
                     dangerouslySetInnerHTML={{__html: post.content.html}}>
                 </div>
