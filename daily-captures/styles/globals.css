@@ -36,8 +36,6 @@ p {
   margin-bottom: 1rem;
 }
 
-
-
 h1 {
   @apply text-5xl
 }
@@ -74,6 +72,21 @@ img {
 section {
   column-rule-style: solid;
   column-rule-color: rgb(55, 55, 55);
+}
+
+.underline-emerald,
+.underline-emerald-hidden {
+  position: relative;
+}
+
+.underline-emerald:before,
+.underline-emerald-hidden:hover:before {
+  position: absolute;
+  height: 0.25rem;
+  width: 2.25rem;
+  bottom: 0.4rem; 
+  content: "";
+  background: #10b981;
 }
 
 
