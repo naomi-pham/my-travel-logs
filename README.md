@@ -1,6 +1,6 @@
 # my-travel-logs
 
-[Travel logs](https://my-travel-logs.vercel.app/) is a travel blog app created with `NextJS` and linked to `HygraphCMS`. Updated content at [Hygraph](https://app.hygraph.com/) will show up here on the website. 
+[Travel logs](https://my-travel-logs.vercel.app/) is a travel blog app created with `NextJS` and linked to `Hygraph CMS`. Updated content at the headless CMS `Hygragh` will show up here on the website. 
 
 The blog has three main pages: 
 - `Home` contains a list of all posts created by the author. 
@@ -12,7 +12,7 @@ Document your discoveries and exploration. Keep track of all destinations and cu
 
 ### Technology
 - `Language & frameworks`: JavaScript, React, NextJS, TailwindCSS.
-- `Tools`: VSCode, Hygraph CMS. 
+- `Tools`: VSCode, [Hygraph CMS](https://app.hygraph.com/). 
 
 ### Features: 
 - Page navigation with React Router (integrated with NextJS)
