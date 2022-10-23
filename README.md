@@ -7,9 +7,11 @@ The blog has three main pages:
 - `Gallery` is a collection of all trip images.
 - `Trip` is made up of individual posts tagged under the same trip. 
 
-### User stories and tech features
-- `User stories`: Document your discoveries and exploration. Keep track of all destinations and cultures you visit. Relive happy memories and share them with your friends. 
-- `Technology`: JavaScript, ReactJS, TailwindCSS.
+### User stories 
+Document your discoveries and exploration. Keep track of all destinations and cultures you visit. Relive happy memories and share them with your friends. 
+
+### Technology
+- `Language & frameworks`: JavaScript, React, NextJS, TailwindCSS.
 - `Tools`: VSCode, Hygraph, NextJS framework. 
 
 ### Features: 
