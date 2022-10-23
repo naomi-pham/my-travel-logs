@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import {GraphQLClient, gql} from "graphql-request"
 import BlogCard from '../components/BlogCard'
 
@@ -25,6 +24,18 @@ const QUERY = gql`
           url
         }
       }
+
+      myTrip {
+        location
+        posts {
+          id
+          title
+          datePublished
+          coverPhoto {
+            url
+          }
+        }
+      }
     }
   }
 `
@@ -35,7 +46,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-    revalidate: 60
+    revalidate: 60,
   }
 }
 
