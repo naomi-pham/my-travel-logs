@@ -12,7 +12,7 @@ Document your discoveries and exploration. Keep track of all destinations and cu
 
 ### Technology
 - `Language & frameworks`: JavaScript, React, NextJS, TailwindCSS.
-- `Tools`: VSCode, Hygraph, NextJS framework. 
+- `Tools`: VSCode, Hygraph CMS. 
 
 ### Features: 
 - Page navigation with React Router (integrated with NextJS)
