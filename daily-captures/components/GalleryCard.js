@@ -20,6 +20,7 @@ export default function GalleryCard({post}) {
         <div className="relative flex justify-center overflow-hidden">       
             <Link href={"/posts/" + slug}>
                 <Image
+                    alt=""
                     src={coverPhoto.url}
                     width={400} height={300}
                     className="hover:scale-125 transform-transition duration-300 hover:cursor-pointer"
