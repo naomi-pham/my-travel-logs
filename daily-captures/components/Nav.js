@@ -6,7 +6,7 @@ export default function Nav() {
 
     const router = useRouter()
 
-    const [isActive, setIsActive] = useState(false)
+    const [isActive, setIsActive] = useState(true)
 
     function openNav() {
         setIsActive(prevOpen => !prevOpen)
