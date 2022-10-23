@@ -14,7 +14,12 @@ export default function Nav() {
                                 underline-emerald-hidden hover:opacity-80'
                 >
                     <Link href={"/gallery"}>Gallery</Link>
-                </p>       
+                </p>  
+                <p className  ='text-base rounded-lg py-2 px-3 font-semibold
+                                underline-emerald-hidden hover:opacity-80'
+                >
+                    <Link href={"/trip"}>Trips</Link>
+                </p>            
             </div>
         </nav>
     )
