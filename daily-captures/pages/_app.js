@@ -1,10 +1,13 @@
 import '../styles/globals.css'
 import { Layout } from '../components/Layout'
+import Transition from '../components/Transition'
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <Transition>
+        <Component {...pageProps} />
+      </Transition>
     </Layout>
   )
 }
