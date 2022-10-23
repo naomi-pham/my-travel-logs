@@ -49,7 +49,7 @@ export default function Trips({myTrips}) {
             <h2 className='text-4xl sm:text-5xl lg:text-6xl mt-4 lg:mt-0'>Trips</h2>
             {myTrips.map(trip => {
                 return (
-                    <div>                   
+                    <div key={trip.id}>                   
                         <div className="bg-zinc-800 px-8 p-12">
                         <div key={trip.id}>                   
                             <h3 className="text-4xl font-light text-center">{trip.location}</h3>
