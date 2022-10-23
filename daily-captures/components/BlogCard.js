@@ -3,7 +3,7 @@ import Image from'next/image';
 
 export default function BlogCard({post}) {
 
-    const {coverPhoto, title, datePublished, slug} = post
+    const {coverPhoto, title, datePublished, slug, myTrip} = post
 
     return (
         <article className='bg-zinc-800 px-8 py-2'>

@@ -5,12 +5,12 @@ export default function TripCard({post}) {
 
     const {title, coverPhoto, datePublished, slug, content} = post
     return (
-        <div className="mb-16">       
-            <div className="bg-zinc-800 overflow-hidden">
+        <div className="mb-0 flex justify-center bg-zinc-800">       
+            <div className="overflow-hidden">
                 <Link href={"/posts/" + slug}>
                     <Image
                         src={coverPhoto.url}
-                        width={320} height={210}
+                        width={400} height={300}
                         className="hover:scale-125 transform-transition duration-300 hover:cursor-pointer"
                     />
                 </Link>
