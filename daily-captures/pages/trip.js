@@ -35,7 +35,7 @@ export async function getStaticProps() {
         props: {
             myTrips,
         },
-        revalidate: 60,
+        revalidate: 10,
     }
     
     
