@@ -46,6 +46,7 @@ h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 2rem;
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -68,6 +69,7 @@ p {
   font-family: var(--ff-primary);
   color: #e4e4e7;
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* layout */
@@ -100,7 +102,7 @@ section {
 }
 
 .about h4 {
-  @apply my-4
+  @apply mt-8 mb-6
 }
 
 .about ul {
@@ -119,7 +121,6 @@ section {
 
 blockquote {
   margin: 2rem;
-  margin-bottom: 0;
   padding-left: 1rem;
   border-left: 3px solid #10b981;
   font-style: italic;
