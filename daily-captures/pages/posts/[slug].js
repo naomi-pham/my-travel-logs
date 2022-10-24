@@ -94,9 +94,9 @@ export default function BlogPost({post}) {
             </article>
 
             <div className="flex place-content-center items-baseline py-8 opacity-80">
-                    {Icons.map(icon => {
+                    {Icons.map((icon, index) => {
                         return (
-                            <button className="border border-1 border-zinc-600 hover:bg-zinc-800">
+                            <button key={index} className="border border-1 border-zinc-600 hover:bg-zinc-800">
                                 <i className={`bx bxl-${icon} w-12 aspect-square text-xl flex justify-center items-center`}></i>
                             </button>
 
