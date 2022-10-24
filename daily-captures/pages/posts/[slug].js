@@ -1,6 +1,7 @@
 import {GraphQLClient, gql} from "graphql-request"
 import Image from "next/image"
 import React from "react"
+import MainWrapper from "../../components/Wrapper/MainWrapper"
 
 const graphcms = new GraphQLClient("https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9hecjwa0gsn01uj7mgtceh8/master")
 
@@ -55,13 +56,15 @@ export async function getStaticProps({params}) {
         props: {
             post,
         },
-        revalidate: 60
+        revalidate: 10,
     }
 }
 
 export default function BlogPost({post}) {
 
     const {coverPhoto, title, datePublished, slug} = post
+
+    const Icons = ["facebook", "twitter", "instagram"]
 
     const [like, setLike] = React.useState(false)
     const [count, setCount] = React.useState(0)
@@ -72,14 +75,14 @@ export default function BlogPost({post}) {
     }
 
     return (
-        <div className='text-left pt-8 lg:pt-12 lg:pb-8'>             
-            <h1 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h1>
-            <article className='bg-zinc-800 px-8 py-2'>
-                <section className='columns-1 sm:columns-2 lg:columns-3 py-8'>
-                    <div className='mt-2 mb-5 w-11/12 lg:mx-auto'>
+        <MainWrapper>             
+            <h2 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h2>
+            <article className='text-center sm:text-left bg-zinc-800 px-8 py-2'>
+                <section className='columns-1 sm:columns-2 lg:columns-3 py-8 px-4'>
+                    <div className='mt-2 mb-5 w-11/12 lg:mx-auto sm:text-left'>
                         <Image 
                             src={coverPhoto.url} 
-                            width={250} 
+                            width={290} 
                             height={180}
                             alt=""
                         />       
@@ -91,22 +94,22 @@ export default function BlogPost({post}) {
             </article>
 
             <div className="flex place-content-center items-baseline py-8 opacity-80">
-                <div>
-                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-facebook w-12 aspect-square text-xl flex justify-center items-center'></i></button>
-                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-twitter w-12 aspect-square text-xl flex justify-center items-center'></i></button>
-                    <button className="border border-1 border-zinc-600 hover:bg-zinc-800"><i className='bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center'></i></button>
+                    {Icons.map(icon => {
+                        return (
+                            <button className="border border-1 border-zinc-600 hover:bg-zinc-800">
+                                <i className={`bx bxl-${icon} w-12 aspect-square text-xl flex justify-center items-center`}></i>
+                            </button>
+
+                        )
+                    })}
                     <button className="border border-1 border-zinc-600 hover:bg-zinc-800">
-                        <i 
-                            className={`text-xl bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} 
-                                        hover:scale-125 transition-transform ease-in-out duration-300 opacity-80
-                                        bx bxl-instagram w-12 aspect-square text-xl flex justify-center items-center`}
-                            onClick={toggleLike}
-                         >
-                        </i>
+                        <i  onClick={toggleLike} 
+                            className={`bx ${like ? "bxs-heart" : "bx-heart"} ${like ? "text-rose-500" : ""} 
+                                        w-12 aspect-square text-xl flex justify-center items-center
+                                        hover:scale-125 transition-transform ease-in-out duration-300 opacity-80`}></i>
                     </button>
-                </div>
             </div>   
-        </div>
+        </MainWrapper>
     )
 }
 
