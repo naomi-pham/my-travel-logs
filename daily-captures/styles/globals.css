@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #18181b;
+  color: #fafafa;
+  font-size: 1rem;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Prata', serif;
   
 }
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  font-weight: 500;
-  font: inherit;
-  text-decoration: none;
-}
-
 
 body {
   margin: 0;
@@ -32,17 +27,19 @@ body {
   line-height: 1.7;
 }
 
-p {
-  margin-bottom: 1rem;
+/* general */
+
+ul, li {
+  font: inherit;
 }
 
-h1 {
-  @apply text-5xl
+a {
+  font-weight: 500;
+  font: inherit;
+  text-decoration: none;
 }
 
-h2 {
-  @apply text-3xl
-}
+/* typography */
 
 h1, h2, h3 {
   font-family: var(--ff-secondary);
@@ -51,8 +48,20 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+h1 {
+  @apply text-5xl
+}
+
+h2 {
+  @apply text-4xl
+}
+
 h3 {
-  color: #fafafa;
+  @apply text-3xl
+}
+
+h4 {
+  @apply text-xl
 }
 
 p {
@@ -61,26 +70,21 @@ p {
   margin-top: 0;
 }
 
+/* layout */
+
 section {
   gap: 2rem;
-}
-
-img {
-  width: 80%;
-}
-
-section {
   column-rule-style: solid;
   column-rule-color: rgb(55, 55, 55);
 }
 
-.underline-emerald,
-.underline-emerald-hidden {
+/* links */
+
+.underline-emerald {
   position: relative;
 }
 
-.underline-emerald:before,
-.underline-emerald-hidden:hover:before {
+.underline-emerald:before {
   position: absolute;
   height: 0.25rem;
   width: 2.25rem;
@@ -88,6 +92,39 @@ section {
   content: "";
   background: #10b981;
 }
+
+/* about page */
+
+.about h3 {
+  @apply mt-8
+}
+
+.about h4 {
+  @apply mb-4
+}
+
+.about ul {
+  list-style-type: disc;
+  padding-left: 1.8rem;
+}
+
+.about li::marker {
+  color: #10b981;
+}
+
+.about a {
+  color: #10b981;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #10b981;
+  font-style: italic;
+}
+
+/* media query */
 
 
 @media (min-width: 768px) {
