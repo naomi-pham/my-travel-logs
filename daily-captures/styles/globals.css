@@ -100,7 +100,7 @@ section {
 }
 
 .about h4 {
-  @apply mb-4
+  @apply my-4
 }
 
 .about ul {
@@ -119,6 +119,7 @@ section {
 
 blockquote {
   margin: 2rem;
+  margin-bottom: 0;
   padding-left: 1rem;
   border-left: 3px solid #10b981;
   font-style: italic;
