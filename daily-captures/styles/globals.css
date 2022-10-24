@@ -121,6 +121,7 @@ section {
 
 blockquote {
   margin: 2rem;
+  margin-left: 0;
   padding-left: 1rem;
   border-left: 3px solid #10b981;
   font-style: italic;
