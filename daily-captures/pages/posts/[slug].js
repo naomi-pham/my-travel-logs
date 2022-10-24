@@ -77,7 +77,7 @@ export default function BlogPost({post}) {
     return (
         <MainWrapper>             
             <h2 className='mt-12'>{title} | <span className='opacity-60'>{datePublished}</span></h2>
-            <article className='text-center sm:text-left bg-zinc-800 px-8 py-2'>
+            <article className='text-left bg-zinc-800 px-8 py-2'>
                 <section className='columns-1 sm:columns-2 lg:columns-3 py-8 px-4'>
                     <div className='mt-2 mb-5 w-11/12 lg:mx-auto sm:text-left'>
                         <Image 
