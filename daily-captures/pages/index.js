@@ -1,5 +1,7 @@
 import {GraphQLClient, gql} from "graphql-request"
 import BlogCard from '../components/BlogCard'
+import MainWrapper from "../components/Wrapper/MainWrapper"
+import SectionTitle from "../components/Typography/SectionTitle"
 
 const graphcms = new GraphQLClient("https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9hecjwa0gsn01uj7mgtceh8/master")
 
@@ -46,15 +48,15 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-    revalidate: 10,
+    revalidate: 60,
   }
 }
 
 export default function Home({posts}) {
   return (
-      <main className='text-left pt-8 lg:pt-12 lg:pb-8'>     
+      <MainWrapper>     
         <div>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl mt-4 lg:mt-0'>My travel logs</h1>
+          <SectionTitle>My travel logs</SectionTitle>
             {posts.map(post => (
               <BlogCard 
                 key={post.id} 
@@ -62,6 +64,6 @@ export default function Home({posts}) {
               /> 
             ))} 
         </div>       
-      </main>
+      </MainWrapper>
   )
 }
