@@ -26,7 +26,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function ({abouts}) {
+export default function About({abouts}) {
 
     return (
         <MainWrapper>
