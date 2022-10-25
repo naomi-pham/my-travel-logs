@@ -31,6 +31,7 @@ body {
 
 ul, li {
   font: inherit;
+  font-family: var(--ff-primary);
 }
 
 a {
@@ -120,9 +121,8 @@ section {
 }
 
 blockquote {
-  margin: 2rem;
-  margin-left: 0;
-  padding-left: 1rem;
+  margin: 2rem 2rem 2rem 0.5rem;
+  padding-left: 0.8rem;
   border-left: 3px solid #10b981;
   font-style: italic;
 }
