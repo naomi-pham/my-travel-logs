@@ -24,7 +24,7 @@ Project is created with:
 * [Hygraph CMS](https://app.hygraph.com/).
 
 ### NPM packages
-* framer-motion
+* [framer-motion](https://www.framer.com/motion/)
 
 ## Features
 - Page navigation with React Router (integrated with NextJS)
