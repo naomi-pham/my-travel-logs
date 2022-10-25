@@ -16,7 +16,8 @@ Document your discoveries and exploration. Keep track of all destinations and cu
 	
 ## Technologies
 Project is created with:
-* NextJS, TailwindCSS
+* [NextJS](https://nextjs.org/docs)
+* Tailwind CSS
 * GraphQL API
 * [Hygraph CMS](https://app.hygraph.com/).
 
