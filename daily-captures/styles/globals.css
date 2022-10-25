@@ -42,7 +42,7 @@ a {
 
 /* typography */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: var(--ff-secondary);
   margin-top: 0;
   margin-bottom: 2rem;
@@ -63,7 +63,7 @@ h3 {
 }
 
 h4 {
-  @apply text-xl
+  @apply text-lg
 }
 
 p {
@@ -94,37 +94,6 @@ section {
   bottom: 0.4rem; 
   content: "";
   background: #10b981;
-}
-
-/* about page */
-
-.about h3 {
-  @apply mt-8
-}
-
-.about h4 {
-  @apply mt-8 mb-6
-}
-
-.about ul {
-  list-style-type: disc;
-  padding-left: 1.8rem;
-}
-
-.about li::marker {
-  color: #10b981;
-}
-
-.about a {
-  color: #10b981;
-  font-weight: bold;
-}
-
-blockquote {
-  margin: 2rem 2rem 2rem 0.5rem;
-  padding-left: 0.8rem;
-  border-left: 3px solid #10b981;
-  font-style: italic;
 }
 
 /* media query */
