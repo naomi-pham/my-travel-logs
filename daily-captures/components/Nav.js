@@ -60,9 +60,9 @@ export default function Nav() {
 
             {/* nav-mobile */}
 
-            <nav className={`${isActive ? "hidden" : ""} sm:hidden fixed w-full left-0 top-0 bottom-0 opacity-90 z-10 p-8 bg-zinc-700`}>
+            <nav className={`${isActive ? "hidden" : ""} sm:hidden fixed w-full left-0 top-0 bottom-0 opacity-90 z-10 p-8 bg-zinc-900`}>
                 <div className="flex flex-col">
-                    <input type="text" placeholder="Search..." className='mt-12 my-6 text-sm px-4 py-2 w-9/12 bg-zinc-800 border border-1 border-zinc-600' />              
+                    <input type="text" placeholder="Search..." className='mt-12 my-6 text-sm px-4 py-2 w-9/12 bg-zinc-900 border border-1 border-zinc-600' />              
                     {NavItems.map((item, index) => {
                         return (
                             <p key={index} className  ={`text-xl rounded-lg py-2 px-3 font-semibold
