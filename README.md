@@ -1,5 +1,7 @@
 # Travel Logs
 
+🚀 [Demo link](https://my-travel-logs.vercel.app/)
+
 ![my-travel-logs-coverImage](https://raw.githubusercontent.com/naomi-pham/my-travel-logs/main/daily-captures/public/Screenshot%202022-10-25%2010.44.45.png)
 
  ## Table of contents
@@ -9,7 +11,7 @@
 * [Setup](#setup)
 
 ## General info
-[Travel logs](https://my-travel-logs.vercel.app/) is a travel blog app built with `NextJS` and `GraphQL API` from `Hygraph CMS`. 
+This is a travel blog app built with `NextJS` and `GraphQL API` from `Hygraph CMS`. 
 
 ### User story
 Document your discoveries and exploration. Keep track of all destinations and cultures you visit. Relive happy memories and share them with your friends.
