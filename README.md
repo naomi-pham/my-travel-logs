@@ -4,7 +4,6 @@
 
  ## Table of contents
 * [General info](#general-info)
-* [User story](#user-story)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Setup](#setup)
@@ -21,7 +20,7 @@ Project is created with:
 * GraphQL API
 * [Hygraph CMS](https://app.hygraph.com/).
 
-### Features
+## Features
 - Page navigation with React Router (integrated with NextJS)
 - Instant data fetching from headless CMS.
 - Individual posts with meaningful slug names. 
