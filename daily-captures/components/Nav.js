@@ -65,9 +65,9 @@ export default function Nav() {
                     <input type="text" placeholder="Search..." className='mt-12 my-6 text-lg pl-2 py-2 bg-zinc-800 w-full' />              
                     {NavItems.map((item, index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <hr className="bg-zinc-900 border-[0.01]" />
-                                <p key={index} className  ={`text-xl rounded-lg py-2 pl-1
+                                <p className  ={`text-xl rounded-lg py-2 pl-1
                                         ${router.pathname == `${item.path}` ? "opacity-90" : ""} hover:opacity-80`}
                                 >
                                     <NavLink href={`${item.path}`}>
