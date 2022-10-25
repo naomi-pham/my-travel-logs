@@ -1,6 +1,6 @@
 # Travel Logs
 
-🚀 [Demo link](https://my-travel-logs.vercel.app/){:target="_blank"}
+<a href="https://my-travel-logs.vercel.app/" target="_blank">🚀 Demo link</a>
 
 ![my-travel-logs-coverImage](https://raw.githubusercontent.com/naomi-pham/my-travel-logs/main/daily-captures/public/Screenshot%202022-10-25%2010.44.45.png)
 
