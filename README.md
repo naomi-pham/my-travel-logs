@@ -25,6 +25,7 @@ Project is created with:
 
 ### NPM install
 * [framer-motion](https://www.framer.com/motion/)
+* [graphql](https://www.npmjs.com/package/graphql)
 * [graphql-request](https://www.npmjs.com/package/graphql-request)
 
 ## Features
