@@ -48,9 +48,9 @@ export default function Trips({myTrips}) {
             {myTrips.map(trip => {
                 return (
                     <section key={trip.id}>                   
-                        <div className="bg-zinc-800 px-8 p-12">
-                            <h3 className="text-4xl font-light text-center underline-emerald before:w-28 before:-bottom-[0.5px]">{trip.location}</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="px-8 p-12 bg-zinc-800 pt-2">
+                            <h3 className="mt-12">{trip.location} | <span className="opacity-60">{trip.posts.length} trips</span></h3>
+                            <section className="columns-1 sm:columns-2 lg:columns-3">
                                 {trip.posts.map(post => {
                                     return (
                                         <TripCard
@@ -59,7 +59,7 @@ export default function Trips({myTrips}) {
                                         />
                                     )
                                 })}
-                            </div>
+                            </section>
                         </div>
                     </section>
                 )
