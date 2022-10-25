@@ -1,3 +1,5 @@
+![my-travel-logs-coverImage](https://raw.githubusercontent.com/naomi-pham/my-travel-logs/main/daily-captures/public/Screenshot%202022-10-25%2010.44.45.png)
+
 # my-travel-logs
 
 [Travel logs](https://my-travel-logs.vercel.app/) is a travel blog app created with `NextJS` and linked to `Hygraph CMS`. Updated content at the headless CMS `Hygragh` will show up here on the website. 
