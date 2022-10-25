@@ -20,5 +20,5 @@ Document your discoveries and exploration. Keep track of all destinations and cu
 
 ### Pages
 - `Home` contains a list of all posts created by the author. 
-- `Gallery` is a collection of all trip images.
-- `Trip` is made up of individual posts tagged under the same trip. 
+- `Gallery` is a collage of travel images.
+- `Trip` is made up of posts under the same trip. 
