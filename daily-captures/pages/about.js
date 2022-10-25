@@ -22,20 +22,29 @@ export async function getStaticProps() {
         props: {
             abouts,
         },
-        revalidate: 10,
+        revalidate: 60,
     }
 }
 
-export default function About({abouts}) {
+export default function ({abouts}) {
 
     return (
         <MainWrapper>
             <SectionTitle>About</SectionTitle>
             {abouts.map(about => {
                 return (
-                    <section key={about.id}
-                        className="about bg-zinc-800 px-8 lg:px-16 pt-14 pb-8"
-                        dangerouslySetInnerHTML={{__html: about.content.html}}>
+                    <section className="about columns-1 sm:columns-2 lg:columns-3 bg-zinc-800 px-8 lg:px-16 pt-14 pb-8">
+                        <div key={about.id}
+                            className=""
+                            dangerouslySetInnerHTML={{__html: about.content.html}}>
+                        </div>
+                        <a href="https://github.com/naomi-pham/my-travel-logs/blob/main/README.md" target="_blank">
+                            <button className ='py-2 text-sm font-bold rounded-lg mt-3 
+                                                underline-emerald before:w-12 hover:before:w-16 hover:opacity-80'
+                            >
+                                Visit GitHub
+                            </button>
+                        </a>
                     </section>
                 )
             })}            
