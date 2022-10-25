@@ -23,8 +23,9 @@ Project is created with:
 * [GraphQL API](https://hygraph.com/query-api)
 * [Hygraph CMS](https://app.hygraph.com/).
 
-### NPM packages
+### NPM install
 * [framer-motion](https://www.framer.com/motion/)
+* [graphql-request](https://www.npmjs.com/package/graphql-request)
 
 ## Features
 - Page navigation with React Router (integrated with NextJS)
