@@ -5,7 +5,7 @@ export default function TripCard({post}) {
 
     const {title, coverPhoto, datePublished, slug, content} = post
     return (
-        <div className="flex justify-center bg-zinc-900 opacity-85 mb-8">       
+        <div className="flex justify-center bg-zinc-800 opacity-85 mb-8">       
             <div className="overflow-hidden">
                 <Link href={"/posts/" + slug}>
                     <Image
